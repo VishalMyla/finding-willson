@@ -13,7 +13,7 @@ const  producttype = z.object(
   }
 )
 const appRouter = router({
-      CreateProduct: publicProcedure
+      createProduct: publicProcedure
           .input(producttype)
           .mutation(async ()=> {
             // db code 
@@ -21,8 +21,6 @@ const appRouter = router({
                 id:"1",
               }
           })
-
-  
 
 });
 
